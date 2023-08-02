@@ -1,0 +1,122 @@
+@import '../../../../tokens';
+
+$figure-offset: calc(-1 * ($gap + $timeline-width + 0.5em));
+$spacing: 1em;
+
+.TimelineEvent {
+  position: relative;
+  transition: $transition;
+  max-width: 100%;
+
+  .TimelineContent {
+    position: relative;
+    border-radius: $spacing;
+    padding: $spacing;
+
+    transition: $transition;
+    width: fit-content;
+    max-width: 100%;
+    height: $entry-height;
+    overflow: hidden;
+
+    > h4,h5,span,p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .TimelineHiddenContent {
+      position: absolute;
+      margin-top: $spacing;
+
+      .TimelineSkills {
+        display: flex;
+        flex-direction: row;
+        gap: $spacing;
+
+        > svg {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &.hovered {
+    .TimelineContent {
+      height: $entry-full-height;
+      .TimelineHiddenContent {
+        position: relative;
+        right: 0;
+      }
+    }
+  }
+
+  &.left {
+    .TimelinePoint {
+      right: $figure-offset
+    }
+
+    .TimelineLine {
+      right: $figure-offset;
+    }
+
+    .TimelineHiddenContent {
+      right: $spacing;
+      .TimelineSkills {
+        justify-content: right;
+      }
+    }
+  }
+
+  &.right {
+    .TimelinePoint {
+      left: $figure-offset;
+    }
+
+    .TimelineLine {
+      left: $figure-offset;
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile-lg) {
+    .TimelineContent {
+      height: auto;
+      width: auto;
+
+      > h4,h5,span,p {
+        text-overflow: initial;
+        white-space: normal;
+      }
+
+      .TimelineSkills {
+        flex-shrink: 0;
+      }
+    }
+
+    &.hovered .TimelineContent {
+      height: auto;
+    }
+  }
+}
+
+.TimelinePoint {
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+
+  background: #2c3034;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+
+.TimelineLine {
+  position: absolute;
+  transform: translateY(0.75em);
+  margin: 0;
+
+  border: 3px solid white;
+  width: 8em;
+  border-radius: $spacing;
+  z-index: -1;
+}

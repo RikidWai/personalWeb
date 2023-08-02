@@ -1,0 +1,43 @@
+@import '../../tokens';
+$entry-centred-full-height: calc($entry-full-height + $gap-sm);
+
+.TimelineEvents {
+  display: flex;
+  flex-direction: column;
+  margin-top: $gap;
+  margin-bottom: $gap;
+  gap: $gap-sm;
+
+  &.left {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  &.right {
+  }
+
+  &.centered {
+    display: grid;
+    grid-template-rows: $entry-centred-full-height;
+    width: 50%;
+    gap: 0;
+
+
+    > div {
+      height: $entry-centred-full-height;
+    }
+
+    &.left {
+      justify-items: end;
+    }
+
+    &.right {
+      padding-top: $entry-height;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: inherit;
+    max-width: calc(100% - $gap - $timeline-width);
+  }
+}

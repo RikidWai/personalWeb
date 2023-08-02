@@ -1,0 +1,67 @@
+/* Base Styling */
+.ProjectCard {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+    border-radius: 1em !important;
+    transition: 300ms;
+}
+
+.ProjectCard .ProjectCardImage {
+    width: 100%;
+    background-color: #0dcaf0;
+    transition: 300ms;
+}
+
+.ProjectCard .ProjectCardBody {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    padding: 1em 1em 0.25em 1em;
+    min-height: 150px;
+    font-size: 80%;
+    transition: 250ms;
+}
+
+.ProjectCard .ProjectCardLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0dcaf0;
+    z-index: 1;
+    transition: 250ms;
+}
+
+.ProjectCard .ProjectCardLink p {
+    line-height: 50px;
+    margin: auto;
+}
+
+/* Hover Styling */
+
+.ProjectCard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.ProjectCard:hover .ProjectCardBody {
+    transform: translateY(-10px);
+}
+
+.ProjectCard:hover .ProjectCardLink {
+    transform: translateY(-50px);
+}
+
+.ProjectCard:hover .ProjectCardImage {
+    transform: scale(1.05)
+}
+
+.ProjectCardLink:hover {
+    background-color: #0aa1c0;
+}
+

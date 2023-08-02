@@ -1,0 +1,19 @@
+.NavBar div {
+    align-self: stretch;
+}
+
+.NavBar .NavButton {
+    height: max-content;
+}
+
+.NavBar .NavButton.CurrentSection {
+    color: #0dcaf0 !important;
+}
+
+.NavBar .NavToggle {
+    height: 100%;
+}
+
+.NavBar .NavToggle svg {
+    transform: scale(1.5);
+}

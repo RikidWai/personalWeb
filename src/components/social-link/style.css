@@ -1,0 +1,19 @@
+.SocialLink {
+    transition: 300ms;
+    text-align: center;
+}
+
+.SocialLink a {
+    text-decoration: none;
+}
+
+.SocialLink svg {
+    transform: scale(2);
+    z-index: -1;
+}
+
+.SocialLink:hover {
+    cursor: pointer;
+    transition: 300ms;
+    transform: scale(1.25);
+}

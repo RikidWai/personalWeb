@@ -1,0 +1,30 @@
+@import '../../tokens';
+$timeline-end-size: 3em;
+
+.Timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  background: white;
+  padding-top: $gap;
+  padding-bottom: $gap;
+  width: $timeline-width;
+
+  .TimelineEdge {
+    background: white;
+    border-radius: 50%;
+    width: $timeline-end-size;
+    height: $timeline-end-size;
+
+    &.TimelineTop {
+      margin-top: calc(-2 * $timeline-end-size - 0.5em);
+    }
+
+    &.TimelineBottom {
+      margin-bottom: calc(-2 * $timeline-end-size - 0.5em)
+    }
+  }
+}

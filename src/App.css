@@ -1,0 +1,11 @@
+.Content {
+    width: 87%;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+}
+
+.ProfileImage {
+    border-radius: 1em;
+}
