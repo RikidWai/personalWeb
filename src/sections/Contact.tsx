@@ -17,24 +17,17 @@ export default function Contact(): React.ReactElement {
             <br />
             <CenterGrid columnSpacing={0}>
                 <GridItem xs={4} sm={2} lg={1}>
-                    <SocialLink name='GitHub' url='https://github.com/t2pellet/' icon={FaGithub} />
+                    <SocialLink name='GitHub' url='https://github.com/RikidWai' icon={FaGithub} />
                 </GridItem>
                 <GridItem xs={4} sm={2} lg={1}>
                     <SocialLink
                         name='LinkedIn'
-                        url='https://linkedin.com/in/t2pellet'
+                        url='https://www.linkedin.com/in/ricky-chu-90843218b/'
                         icon={FaLinkedinIn}
                     />
                 </GridItem>
                 <GridItem xs={4} sm={2} lg={1}>
-                    <SocialLink
-                        name='E-mail'
-                        url='mailto:t2pellet@uwaterloo.ca'
-                        icon={FaMailBulk}
-                    />
-                </GridItem>
-                <GridItem xs={4} sm={2} lg={1}>
-                    <SocialLink name='Phone' url='tel:+15145704380' icon={FaPhoneAlt} />
+                    <SocialLink name='E-mail' url='mailto:rickywai77@gmail.com' icon={FaMailBulk} />
                 </GridItem>
                 <GridItem xs={4} sm={2} lg={1}>
                     <SocialLink name='Resumé' icon={IoNewspaperOutline} url='/doc/resume.pdf' />

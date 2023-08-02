@@ -23,14 +23,14 @@ export default function AboutMe(): React.ReactElement {
                     <br />
                     <Typography variant='h1'>
                         <StyledText bold colour='#0dcaf0'>
-                            Tenzin
+                            Ricky
                         </StyledText>{' '}
-                        Pelletier
+                        Chu
                     </Typography>
                     <br />
                     <Paragraph>
                         <StyledText bold>Hi :)</StyledText>
-                        {` I'm Tenzin, a 4th year Computer Science student @ UWaterloo`}
+                        {` I'm Ricky, a graduate Computer Science student @ HKU`}
                     </Paragraph>
                     <Paragraph>
                         {`I love developing tangible, user-facing features, and feel I'm at my best when I can see my work, and the products I'm working on have real customer impact`}
@@ -42,7 +42,7 @@ export default function AboutMe(): React.ReactElement {
                         {`But above all, I'm still trying to learn and be challenged by new tools, frameworks and roles`}
                     </Paragraph>
                     <Paragraph>
-                        {`Outside of programming, I'm learning to play the guitar, and enjoy music, photography, board games and D&D!`}
+                        {`Outside of programming, I'm learning to play the Volleyball, and enjoy traveling, board games and jogging!`}
                     </Paragraph>
                 </GridItem>
             </CenterGrid>
