@@ -45,10 +45,10 @@ function TimelineEvent({
                 onMouseLeave={() => onContentHovered(false)}
                 onMouseDown={() => width < BREAKPOINTS.DESKTOP && onContentHovered(!isHovered)}
             >
-                <Typography variant='h4' color='#0dcaf0' marginBottom={0}>
+                <Typography variant='h4' color='#00645A' marginBottom={0}>
                     {company}
                 </Typography>
-                <Typography variant='h5' color='white'>
+                <Typography variant='h5' color='black'>
                     {position}
                 </Typography>
                 <StyledText bold colour='text.secondary'>

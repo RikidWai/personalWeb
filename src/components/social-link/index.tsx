@@ -16,7 +16,7 @@ export default function SocialLink(props: SocialLinkProps): React.ReactElement {
     return (
         <div className='SocialLink'>
             <a href={url} target='_blank' rel='noreferrer noopener'>
-                {icon({ style: { color: '#0dcaf0' } })}
+                {icon({ style: { color: '#00645A' } })}
                 <Paragraph>{name}</Paragraph>
             </a>
         </div>

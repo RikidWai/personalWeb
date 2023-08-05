@@ -30,7 +30,11 @@ export default function Contact(): React.ReactElement {
                     <SocialLink name='E-mail' url='mailto:rickywai77@gmail.com' icon={FaMailBulk} />
                 </GridItem>
                 <GridItem xs={4} sm={2} lg={1}>
-                    <SocialLink name='Resumé' icon={IoNewspaperOutline} url='/doc/resume.pdf' />
+                    <SocialLink
+                        name='Resumé'
+                        icon={IoNewspaperOutline}
+                        url='/doc/ChuWaiKitResumeCA.pdf'
+                    />
                 </GridItem>
             </CenterGrid>
         </Section>

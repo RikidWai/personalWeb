@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
 import { Typography } from '@mui/material';
+import StyledText from '../text/styled-text';
 import './style.css';
 
 type SectionProps = PropsWithChildren & {
@@ -23,8 +24,9 @@ function Section(props: SectionProps): React.ReactElement {
                     textAlign='center'
                     marginBottom='32px'
                     variant='h2'
+                    color='#367878'
                 >
-                    {heading}
+                    <StyledText bold>{heading} </StyledText>
                 </Typography>
             )}
             <br />

@@ -8,13 +8,13 @@ import App from './App';
 
 const theme = createTheme({
     palette: {
-        mode: 'dark',
+        mode: 'light',
         text: {
-            secondary: '#b2c2e2'
+            secondary: '#000000'
         },
         background: {
-            default: '#2c3034',
-            paper: '#121212'
+            default: '#f1f4f1',
+            paper: '#f1f4f1'
         }
     },
     typography: {

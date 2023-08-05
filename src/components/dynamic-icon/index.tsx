@@ -30,7 +30,7 @@ export default function DynamicIcon({ type }: Props): React.ReactElement {
         return (
             <Tooltip title={name}>
                 <div>
-                    <IconComponent size='2rem' color='#0dcaf0' />
+                    <IconComponent size='2rem' color='#00645A' />
                 </div>
             </Tooltip>
         );

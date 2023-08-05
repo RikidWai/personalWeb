@@ -37,7 +37,9 @@ export default function ProjectCard({
                         className='ProjectCardBody'
                         style={{ backgroundColor: palette.background.paper }}
                     >
-                        <Typography variant='h5'>{name}</Typography>
+                        <Typography variant='h5' color='black'>
+                            {name}
+                        </Typography>
                         <Paragraph size='14px'>{description}</Paragraph>
                     </div>
                     <div
@@ -47,7 +49,7 @@ export default function ProjectCard({
                             openUrl(repo);
                         }}
                     >
-                        <Paragraph colour='text.primary'>Source Code</Paragraph>
+                        <Paragraph colour='white'>Source Code</Paragraph>
                     </div>
                 </div>
             </Paper>

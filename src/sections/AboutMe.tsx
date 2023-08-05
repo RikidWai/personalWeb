@@ -12,17 +12,12 @@ export default function AboutMe(): React.ReactElement {
         <Section id='About'>
             <CenterGrid rowSpacing={0}>
                 <GridItem xs={11} md={5}>
-                    <img
-                        className='ProfileImage'
-                        src='/img/headshot.jpg'
-                        alt='Profile'
-                        width='100%'
-                    />
+                    <img className='ProfileImage' src='/img/me.jpg' alt='Profile' width='100%' />
                 </GridItem>
                 <GridItem xs={11} md={7}>
                     <br />
                     <Typography variant='h1'>
-                        <StyledText bold colour='#0dcaf0'>
+                        <StyledText bold colour='#00645a'>
                             Ricky
                         </StyledText>{' '}
                         Chu
