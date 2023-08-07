@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Section from '../components/section';
 import Timeline from '../components/timeline';
-import WorkExp from '../info/workExp.json';
+import WorkExp from '../assets/info/workExp.json';
 
 export default function History(): React.ReactElement {
     return (

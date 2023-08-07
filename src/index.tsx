@@ -9,6 +9,9 @@ import App from './App';
 const theme = createTheme({
     palette: {
         mode: 'light',
+        primary: {
+            main: '#00645a'
+        },
         text: {
             secondary: '#000000'
         },

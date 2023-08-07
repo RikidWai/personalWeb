@@ -3,7 +3,7 @@ import React from 'react';
 import CenterGrid from '../components/center-grid';
 import ProjectCard from '../components/project-card';
 import Section from '../components/section';
-import projs from '../info/projects.json';
+import projs from '../assets/info/projects.json';
 function Projects(): React.ReactElement {
     return (
         <Section id='Projects' heading='Projects'>

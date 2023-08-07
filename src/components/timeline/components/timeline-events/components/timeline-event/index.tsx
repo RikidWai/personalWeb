@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Paper, Typography } from '@mui/material';
+import { Paper, Typography, useTheme } from '@mui/material';
 import classNames from 'classnames';
 
 import DynamicIcon from '@/components/dynamic-icon';
@@ -28,7 +28,7 @@ function TimelineEvent({
     const onContentHovered = (hovered: boolean) => {
         setIsHovered(hovered);
     };
-
+    const theme = useTheme();
     const timelineClasses = classNames(styles.TimelineEvent, {
         [styles.hovered]: isHovered,
         [styles.left]: side === 'left',
@@ -45,7 +45,7 @@ function TimelineEvent({
                 onMouseLeave={() => onContentHovered(false)}
                 onMouseDown={() => width < BREAKPOINTS.DESKTOP && onContentHovered(!isHovered)}
             >
-                <Typography variant='h4' color='#00645A' marginBottom={0}>
+                <Typography variant='h4' color={theme.palette.primary.main} marginBottom={0}>
                     {company}
                 </Typography>
                 <Typography variant='h5' color='black'>

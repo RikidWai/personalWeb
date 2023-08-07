@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { Typography } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
 import StyledText from '../text/styled-text';
 import './style.css';
 
@@ -14,6 +14,7 @@ const defaultProps = {
 
 function Section(props: SectionProps): React.ReactElement {
     const { id, heading, children } = props;
+    const theme = useTheme();
     return (
         <div className='Section' id={id}>
             {heading && (
@@ -24,7 +25,7 @@ function Section(props: SectionProps): React.ReactElement {
                     textAlign='center'
                     marginBottom='32px'
                     variant='h2'
-                    color='#367878'
+                    color={theme.palette.primary.main}
                 >
                     <StyledText bold>{heading} </StyledText>
                 </Typography>

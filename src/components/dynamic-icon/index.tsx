@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tooltip } from '@mui/material';
+import { Tooltip, useTheme } from '@mui/material';
 import * as DiIcons from 'react-icons/di';
 import * as SiIcons from 'react-icons/si';
 import * as TbIcons from 'react-icons/tb';
@@ -15,7 +15,7 @@ type Props = {
 export default function DynamicIcon({ type }: Props): React.ReactElement {
     // eslint-disable-next-line import/namespace
     const IconComponent = Icons[type];
-
+    const theme = useTheme();
     const getSliceIndex = (str: string): number => {
         const matches = str.match(/[A-Z]/g);
         if (matches) {
@@ -30,7 +30,7 @@ export default function DynamicIcon({ type }: Props): React.ReactElement {
         return (
             <Tooltip title={name}>
                 <div>
-                    <IconComponent size='2rem' color='#00645A' />
+                    <IconComponent size='2rem' color={theme.palette.primary.main} />
                 </div>
             </Tooltip>
         );
