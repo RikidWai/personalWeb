@@ -16,7 +16,7 @@ export default function AboutMe(): React.ReactElement {
         <Section id='About'>
             <CenterGrid rowSpacing={0}>
                 <GridItem xs={11} md={5}>
-                    <img className='ProfileImage' src='/img/me.jpg' alt='Profile' width='100%' />
+                    <img className='ProfileImage' src='./img/me.jpg' alt='Profile' width='100%' />
                 </GridItem>
                 <GridItem xs={11} md={7}>
                     <br />
