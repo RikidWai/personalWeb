@@ -41,7 +41,7 @@ export default function AboutMe(): React.ReactElement {
                         {`But above all, I'm still trying to learn and be challenged by new tools, technologies and roles`}
                     </Paragraph>
                     <Paragraph>
-                        {`Outside of programming, I'm enjoy playing the volleyball🏐, and traveling🗺️!`}
+                        {`Outside of programming, I'm enjoy playing the volleyball🏐, and enjoy traveling🗺️!`}
                     </Paragraph>
                     <Lottie animationData={travel} style={{ height: 500 }} />
                 </GridItem>
