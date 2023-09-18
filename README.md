@@ -2,4 +2,4 @@
 
 It's my personal website! Not much to see here
 
-Go to www.github.com Portfolio to check it out!
+Go to https://rikidwai.github.io/personalWeb/ to check it out!
