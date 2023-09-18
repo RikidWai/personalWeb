@@ -2,4 +2,4 @@
 
 It's my personal website! Not much to see here
 
-Go to http://Ricky's Portfolio to check it out!
+Go to www.github.com Portfolio to check it out!
