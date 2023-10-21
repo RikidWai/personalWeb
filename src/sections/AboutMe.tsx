@@ -43,7 +43,7 @@ export default function AboutMe(): React.ReactElement {
                     <Paragraph>
                         {`Outside of programming, I'm enjoy playing the volleyball🏐, and enjoy traveling🗺️! And I'm a BURRITO🌯 lover! `}
                     </Paragraph>
-                    <Lottie animationData={travel} style={{ height: 500 }} />
+                    {/* <Lottie animationData={travel} style={{ height: 500 }} /> */}
                 </GridItem>
             </CenterGrid>
         </Section>
