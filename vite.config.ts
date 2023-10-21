@@ -10,6 +10,7 @@ export default defineConfig({
         }
     },
     plugins: [react()],
+    base: '/RikidWai/',
     build: {
         rollupOptions: {
             output: {
