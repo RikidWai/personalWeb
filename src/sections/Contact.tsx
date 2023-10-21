@@ -29,7 +29,7 @@ export default function Contact(): React.ReactElement {
                     <SocialLink
                         name='Resumé'
                         icon={IoNewspaperOutline}
-                        url='./doc/ChuWaiKitResumeCA.pdf'
+                        url='./doc/ChuWaiKitResume.pdf'
                     />
                 </GridItem>
             </CenterGrid>
