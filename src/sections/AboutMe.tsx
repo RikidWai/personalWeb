@@ -28,7 +28,7 @@ export default function AboutMe(): React.ReactElement {
                     <br />
                     <Paragraph>
                         <StyledText bold>Halo :)</StyledText>
-                        {` I'm Ricky, a Computer Science graduate @ HKU, currently a IT & DGT trainee in Cathay Pacific.`}
+                        {` I'm Ricky, a Computer Science graduate @ HKU, currently a IT & DGT trainee at Cathay Pacific.`}
                     </Paragraph>
                     <Paragraph>
                         {`I love developing interesting digital products that have a real impact on customers, whether it's in the field of data science, software development, or the business side.`}
