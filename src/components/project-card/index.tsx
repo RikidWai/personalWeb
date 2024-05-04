@@ -7,6 +7,7 @@ import { GridItem } from '../center-grid';
 import Paragraph from '../text/paragraph';
 
 type ProjectCardProps = {
+    key: string;
     name: string;
     description: string;
     image: string;
@@ -15,6 +16,7 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({
+    key,
     name,
     description,
     image,

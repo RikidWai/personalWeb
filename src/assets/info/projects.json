@@ -9,7 +9,7 @@
     {
         "name": "Explore Worldly",
         "description": "This is an ongoing fullstack project for the explorer to record the footsteps around the world. It utilizes the power of Mapbox Maps on React, React Native and Nodejs. ",
-        "image": "./img/",
+        "image": "./img/world.png",
         "url": "https://github.com/RikidWai/ExploreWorldly",
         "repo": "https://github.com/RikidWai/ExploreWorldly"
     },

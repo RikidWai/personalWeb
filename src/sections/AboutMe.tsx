@@ -1,14 +1,13 @@
 import React from 'react';
 
-import { Typography } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
+import Lottie from 'lottie-react';
 
+import travel from '../assets/animation/fly.json';
 import CenterGrid, { GridItem } from '../components/center-grid';
 import Section from '../components/section';
 import Paragraph from '../components/text/paragraph';
 import StyledText from '../components/text/styled-text';
-import Lottie from 'lottie-react';
-import travel from '../assets/animation/fly.json';
-import { useTheme } from '@mui/material';
 
 export default function AboutMe(): React.ReactElement {
     const theme = useTheme();
@@ -29,16 +28,16 @@ export default function AboutMe(): React.ReactElement {
                     <br />
                     <Paragraph>
                         <StyledText bold>Halo :)</StyledText>
-                        {` I'm Ricky, a graduate Computer Science student @ HKU`}
+                        {` I'm Ricky, a Computer Science graduate @ HKU, currently a IT & DGT trainee in Cathay Pacific.`}
                     </Paragraph>
                     <Paragraph>
                         {`I love developing interesting digital products that have a real impact on customers, whether it's in the field of data science, software development, or the business side.`}
                     </Paragraph>
                     <Paragraph>
-                        {`I've worked with Machine Learning Projects, GAN in Pytorch as well as React, Spring and MongoDB`}
+                        {`I've worked with Machine Learning Projects, GAN in Pytorch as well as React, Spring and MongoDB.`}
                     </Paragraph>
                     <Paragraph>
-                        {`But above all, I'm still trying to learn and be challenged by new tools, technologies and roles`}
+                        {`But above all, I'm still trying to learn and be challenged by new tools, technologies and roles.`}
                     </Paragraph>
                     <Paragraph>
                         {`Outside of programming, I'm enjoy playing the volleyball🏐, and enjoy traveling🗺️! And I'm a BURRITO🌯 lover! `}
