@@ -22,6 +22,7 @@ function CenterGrid(props: CenterGridProps): React.ReactElement {
             alignItems='center'
             columnSpacing={columnSpacing}
             rowSpacing={rowSpacing}
+            width='100%'
         >
             {children}
         </Grid>

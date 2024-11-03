@@ -25,13 +25,13 @@ export default function Contact(): React.ReactElement {
                 <GridItem xs={4} sm={2} lg={1}>
                     <SocialLink name='E-mail' url='mailto:rickywai77@gmail.com' icon={FaMailBulk} />
                 </GridItem>
-                <GridItem xs={4} sm={2} lg={1}>
+                {/* <GridItem xs={4} sm={2} lg={1}>
                     <SocialLink
                         name='Resumé'
                         icon={IoNewspaperOutline}
                         url='./doc/ChuWaiKitResume.pdf'
                     />
-                </GridItem>
+                </GridItem> */}
             </CenterGrid>
         </Section>
     );
